@@ -3,13 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <title>Frontend Mentor | myteam website challenge - Homepage</title>
+    <title>My Team - home</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -20,20 +14,19 @@
           <li><a class="about-link" href="about.html">about</a></li>
           <li><a class="btn btn-contact btn--white" href="about.html">contact us</a></li>
           </ul>
-          <!-- <ul class="mobile-list">
+          <ul class="mobile-list">
+            <li><img class="hide-menu" src="images/icon-close.svg"></li>
            <li><a class="home-link" href="index.html">home</a></li>
           <li><a class="about-link" href="about.html">about</a></li>
-          <li><a class="btn" href="about.html">contact us</a></li>
-        </ul> -->
-        <img class="nav-toggler" src="images/icon-hamburger.svg">
+           <li><a class="btn btn-contact btn--white" href="about.html">contact us</a></li>
+          <li><img class="pattern-menu" src="images/bg-pattern-about-1-mobile-nav-1.svg"></li>
+        </ul>
+        <img class="show-menu" src="images/icon-hamburger.svg">
       </nav>
    
     <main>
       <div class="hero">
         <div class="hero-container">
-          <!-- <div class="hero-before">
-            <img src="images/bg-pattern-home-1.svg">
-          </div> -->
         <h1 class="hero-header">
           Find the best <span class="coral">talent</span>
         </h1>
@@ -95,5 +88,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
