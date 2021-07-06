@@ -803,4 +803,38 @@ footer {
 
 }
 
+/* BARBA */
+
+.cont-bandes {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  position: fixed;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.bande {
+  height: 25%;
+  width: 0%;
+}
+
+.bande:first-of-type {
+  background-color: var(--dark-green);
+}
+
+.bande:nth-of-type(2) {
+  background-color: var(--midnight-green);
+}
+
+.bande:nth-of-type(3) {
+  background-color: var(--police-blue);
+}
+
+.bande:last-of-type {
+  background-color: var(--rapture-blue);
+}
+
+
 

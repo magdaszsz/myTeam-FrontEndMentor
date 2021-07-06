@@ -6,7 +6,13 @@
     <title>My Team - home</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="cont-bandes">
+      <div class="bande"></div>
+      <div class="bande"></div>
+      <div class="bande"></div>
+      <div class="bande"></div>
+    </div>
     <nav>
       <img class="nav-logo" src="images/logo.svg" alt="myteam logo" />
       <ul class="desktop-list">
@@ -33,7 +39,7 @@
       <img class="show-menu" src="images/icon-hamburger.svg" />
     </nav>
 <!-- END OF NAV -->
-    <main>
+    <main data-barba="container" data-barba-namespace="home">
       <!-- HERO -->
       <div class="hero">
         <div class="hero-container">
@@ -202,6 +208,8 @@
         <p class="footer-copyright">Copyright 2021. All Rights Reserved</p>
       </div>
     </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="script.js"></script>
   </body>
 </html>
