@@ -12,11 +12,24 @@
   --rapture-blue: #79c8c7;
   --police-blue: #2c6269;
   --jungle-green: #004047;
-  --sacramento-green: #012f34;
+  --sacramento-green: hsl(186, 96%, 10%);
   --dark-green: #002529;
   --robin-blue: #c4fffe;
   --font: "Livvic", sans-serif;
 }
+
+/* main {
+  visibility: hidden;
+  opacity: 0;
+} */
+
+.anim-nav {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100px);
+}
+
+
 
 .visually-hidden {
   position: absolute;
