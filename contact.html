@@ -23,7 +23,7 @@
       <div class="bande"></div>
       <div class="bande"></div>
     </div>
-    <nav>
+    <nav id="contact">
       <img class="nav-logo" src="images/logo.svg" alt="myteam logo" />
       <ul class="desktop-list">
         <li><a class="home-link" href="index.html">home</a></li>
@@ -54,15 +54,40 @@
     </nav>
 
     <main data-barba="container" data-barba-namespace="contact">
-
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2 class="contact-header">Contact</h2>
+          <h3 class="contact-subheader coral">Ask us about</h3>
+          <ul class="contact-info-list">
+            <li>
+              <img src="images/icon-person.svg">
+              The quality of our talent network
+            </li>
+            <li>
+              <img src="images/icon-cog.svg" alt="">
+              Usage & implementation of our software
+            </li>
+            <li>
+              <img src="images/icon-chart.svg" alt="">
+              How we help drive innovation
+            </li>
+          </ul>
+        </div>
+        <form action="post" aria-label="Ask us a question">
+          <input type="text" placeholder="Name" aria-label="Name">
+          <input type="email" placeholder="Email Address" aria-label="Email address">
+          <input type="text" placeholder="Company Name" aria-label="Company name">
+          <input type="text" placeholder="Title" aria-label="Title">
+        </form>
+      </div>
     </main>
     <footer>
       <div class="main-grid">
         <img class="footer-logo" src="images/logo.svg" />
 
         <ul class="footer-link-list">
-          <li><a class="home-link" href="index.html">home</a></li>
-          <li><a class="about-link" href="about.html">about</a></li>
+          <li><a class="home-link" href="#index">home</a></li>
+          <li><a class="about-link" href="#about">about</a></li>
         </ul>
         <div class="footer-address">
           <p>987 Hillcrest Lane</p>
@@ -107,6 +132,8 @@
         <p class="footer-copyright">Copyright 2021. All Rights Reserved</p>
       </div>
     </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="script.js"></script>
   </body>
 </html>

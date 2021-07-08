@@ -1,4 +1,6 @@
-
+window.addEventListener("load", () => {
+ console.log('hej')
+});
 
 const showBtn = document.querySelector(".show-menu");
 const mobileMenu = document.querySelector(".mobile-list");
@@ -13,10 +15,8 @@ hideBtn.addEventListener("click", () => {
 });
 
 const allBandes = document.querySelectorAll(".bande");
-const TLAnim = new TimelineMax();
+const tl = gsap.timeline();
 
-
- 
 function delay(n) {
   return new Promise((done) => {
     setTimeout(() => {
@@ -33,17 +33,17 @@ barba.init({
       async leave() {
         const done = this.async();
 
-        TLAnim.to(allBandes, { width: "100%", stagger: 0.05 });
+        tl.to(allBandes, { width: "100%", stagger: 0.05 });
 
         await delay(800);
         done();
       },
       enter() {
-        TLAnim.to(allBandes, { width: "0%", stagger: 0.05 });
+        tl.to(allBandes, { width: "0%", stagger: 0.05 });
       },
       once() {
-         TLAnim.to(".anim-nav", { autoAlpha: 1, y: 0, stagger: 0.2 })
-        TLAnim.fromTo(
+        tl.to(".anim-nav", { autoAlpha: 1, y: 0, stagger: 0.2 });
+        tl.fromTo(
           ".anim-header",
           { autoAlpha: 0, x: 50, duration: 0.5 },
           { autoAlpha: 1, x: 0 }
@@ -53,10 +53,7 @@ barba.init({
           { autoAlpha: 1, x: 0 },
           "-=.5"
         );
-   
-
-      }
-     
+      },
     },
   ],
 });
