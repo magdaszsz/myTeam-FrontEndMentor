@@ -33,13 +33,13 @@ barba.init({
       async leave() {
         const done = this.async();
 
-        tl.to(allBandes, { width: "100%", stagger: 0.05 });
+        tl.to(allBandes, { scaleX: 1, stagger: 0.05 });
 
         await delay(800);
         done();
       },
       enter() {
-        tl.to(allBandes, { width: "0%", stagger: 0.05 });
+        tl.to(allBandes, { scaleX: 0, stagger: 0.05 });
       },
       once() {
         tl.to(".anim-nav", { autoAlpha: 1, y: 0, stagger: 0.2 });
