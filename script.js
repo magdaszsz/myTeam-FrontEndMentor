@@ -1,6 +1,4 @@
-window.addEventListener("load", () => {
- console.log('hej')
-});
+
 
 const showBtn = document.querySelector(".show-menu");
 const mobileMenu = document.querySelector(".mobile-list");
@@ -39,6 +37,7 @@ barba.init({
         done();
       },
       enter() {
+        window.scrollTo(0, 0);
         tl.to(allBandes, { scaleX: 0, stagger: 0.05 });
       },
       once() {
@@ -57,3 +56,5 @@ barba.init({
     },
   ],
 });
+
+
