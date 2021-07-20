@@ -29,7 +29,7 @@
         <li><a class="home-link" href="index.html">home</a></li>
         <li><a class="about-link" href="about.html">about</a></li>
         <li>
-          <a class="btn btn-contact btn--white" href="contact.html"
+          <a class="btn btn-contact btn--white" href="#"
             >contact us</a
           >
         </li>
@@ -39,7 +39,7 @@
         <li><a class="home-link" href="index.html">home</a></li>
         <li><a class="about-link" href="about.html">about</a></li>
         <li>
-          <a class="btn btn-contact btn--white" href="contact.html"
+          <a class="btn btn-contact btn--white" href="#"
             >contact us</a
           >
         </li>
@@ -73,11 +73,33 @@
             </li>
           </ul>
         </div>
-        <form action="post" aria-label="Ask us a question">
-          <input type="text" placeholder="Name" aria-label="Name">
-          <input type="email" placeholder="Email Address" aria-label="Email address">
-          <input type="text" placeholder="Company Name" aria-label="Company name">
-          <input type="text" placeholder="Title" aria-label="Title">
+        <form  novalidate aria-label="Ask us a question">
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="name">Name</label>
+            <input class="userInput" type="text" id="name" placeholder="Name">
+            <small class="error-message"></small>
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="email">Email address</label>
+            <input class="userInput" type="email" id="email" placeholder="Email address">
+            <small class="error-message"></small>
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="name">Company name</label>
+            <input class="userInput" type="text" id="company-name" placeholder="Company name">
+            <small class="error-message"></small>
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="title">Title</label>
+            <input class="userInput" type="text" id="title" placeholder="title">
+            <small class="error-message"></small>
+          </div>
+          <div class="input-wrapper">
+            <label class="visually-hidden" for="textarea">Type your message here</label>
+            <textarea class="userInput" id="textarea" rows="4" placeholder="Message"></textarea>
+             <small class="error-message"></small>
+          </div>
+          <button type="submit" class="btn btn-submit">Submit</button>
         </form>
       </div>
     </main>
