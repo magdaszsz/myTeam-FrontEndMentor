@@ -27,6 +27,10 @@
   transform: translateY(-100px);
 }
 
+.anim-text {
+  visibility: inherit;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1363,4 +1367,8 @@ input, textarea {
 
 .bande:last-of-type {
   background-color: var(--rapture-blue);
+}
+
+.styled-content {
+  visibility: hidden;
 }

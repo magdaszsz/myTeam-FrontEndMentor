@@ -1,5 +1,3 @@
-
-
 const showBtn = document.querySelector(".show-menu");
 const mobileMenu = document.querySelector(".mobile-list");
 const hideBtn = document.querySelector(".hide-menu");
@@ -129,21 +127,27 @@ barba.init({
      
       },
       once() {
-        tl.to(".anim-nav", { autoAlpha: 1, y: 0, stagger: 0.2 });
-        tl.fromTo(
+      tl.to(".styled-content", { autoAlpha: 1 })
+        .to(".anim-nav", { autoAlpha: 1, y: 0, stagger: 0.2 })
+        .fromTo(
           ".anim-header",
           { autoAlpha: 0, x: 50, duration: 0.5 },
           { autoAlpha: 1, x: 0 }
-        ).fromTo(
+        )
+        .fromTo(
           ".anim-text",
           { autoAlpha: 0, x: -50, duration: 0.5 },
           { autoAlpha: 1, x: 0 },
-          "-=.5"
+          "<"
         );
       },
     },
   ],
 });
+
+
+
+
 
 // const form = document.querySelector('form');
 // const userName = document.getElementById('name');
